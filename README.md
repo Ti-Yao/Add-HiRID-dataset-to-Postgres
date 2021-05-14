@@ -1,6 +1,6 @@
 # Add HiRID dataset to Postgres
 
-# at the moment only adding the observation tables
+### N.B. only adding the observation tables for now
 
 #### 1 Download database and SQL scripts
 1. Download the HiRID repository to your computer. https://physionet.org/content/hirid/1.1
