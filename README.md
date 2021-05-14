@@ -8,7 +8,7 @@ N.B. This is for the raw data rather than the merged or imputed.
 wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/observation_tables_csv.tar.gz
 wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/pharma_records_csv.tar.gz
 ```
-3. Unzip the .csv.gz files using e.g. tarball (Linux) or 7zip (windows)
+3. Unzip the .tar.gz files using e.g. tarball (Linux/Mac OS) or 7zip (windows)
 4. Download the scripts from this repository.
 
 
