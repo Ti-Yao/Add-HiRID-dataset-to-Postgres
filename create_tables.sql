@@ -1,0 +1,14 @@
+SET search_path TO HiRID;
+DROP TABLE IF EXISTS OBSERVATIONS_TABLE CASCADE;
+CREATE TABLE OBSERVATIONS_TABLE
+(
+	datetime TIMESTAMP NOT NULL,
+	entertime TIMESTAMP NOT NULL,
+	patientid INT NOT NULL,
+	status INT,
+	stringvalue VARCHAR(200),
+	type VARCHAR(200),
+	value DOUBLE PRECISION,
+	variableid INT
+) ;
+
