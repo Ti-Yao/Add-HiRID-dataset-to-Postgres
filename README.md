@@ -1,11 +1,15 @@
 # Add HiRID dataset to Postgres
-
-### N.B. only adding the observation tables for now
+N.B. This is for the raw data rather than the merged or imputed.
 
 #### 1 Download database and SQL scripts
-1. Download the HiRID repository to your computer. https://physionet.org/content/hirid/1.1
-2. Unzip all the .csv.gz files tar (Linux) or 7zip (windows)
-3. Download the scripts from this repository.
+1. Get permission to use HiRID dataset from here. https://physionet.org/content/hirid/1.1
+2. Download the raw data files.
+```
+wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/observation_tables_csv.tar.gz
+wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/pharma_records_csv.tar.gz
+```
+3. Unzip the .csv.gz files using e.g. tarball (Linux) or 7zip (windows)
+4. Download the scripts from this repository.
 
 
 #### 2 Install Postgres
@@ -22,9 +26,9 @@ sudo -u postgres psql # enter into postgres
 # in postgres pay attention to the semicolons!
 ALTER USER postgres PASSWORD 'myPassword'; # create password
 #ALTER ROLE
-CREATE DATABASE hirid; # create database called mimiciv
+CREATE DATABASE hirid; # create database
 #CREATE DATABASE
-\c mimiciv # connect to database
+\c hirid  # connect to database
 #you are now connected to database "hirid" as user "postgres"
 CREATE SCHEMA hirid; 
 # CREATE SCHEMA
