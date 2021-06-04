@@ -40,3 +40,7 @@ cd /folder/containing/data/and/scripts
 psql -U postgres -h 127.0.0.1 -f create_tables.sql 'dbname=hirid options=--search_path=hirid password = myPassword'      # create tables 
 psql -U postgres -h 127.0.0.1  -f load_data.sql 'dbname=hirid options=--search_path=hirid password = myPassword'         # load hirid data into tables. This may take a while
 ```
+
+
+References
+1. Hyland, S.L., Faltys, M., Hüser, M. et al. Early prediction of circulatory failure in the intensive care unit using machine learning. Nat Med 26, 364–373 (2020). https://doi.org/10.1038/s41591-020-0789-4
