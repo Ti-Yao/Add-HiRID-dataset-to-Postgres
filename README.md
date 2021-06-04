@@ -19,7 +19,7 @@ brew install postgres           # (Mac OS)
 ```
 or http://www.postgresql.org/download/ (Any Operating System incl Windows)
 
-3 Create a user, database and schema in Postgres
+#### 3 Create a user, database and schema in Postgres
 ```
 sudo -u postgres psql # enter into postgres
 
@@ -34,7 +34,7 @@ CREATE SCHEMA hirid;
 # CREATE SCHEMA
 \q # quit
 ```
-4 Load data into postgres
+#### 4 Load data into postgres
 ```
 cd /folder/containing/data/and/scripts
 psql -U postgres -h 127.0.0.1 -f create_tables.sql 'dbname=hirid options=--search_path=hirid password = myPassword'      # create tables 
@@ -42,5 +42,5 @@ psql -U postgres -h 127.0.0.1  -f load_data.sql 'dbname=hirid options=--search_p
 ```
 
 
-References
+#### References
 1. Hyland, S.L., Faltys, M., Hüser, M. et al. Early prediction of circulatory failure in the intensive care unit using machine learning. Nat Med 26, 364–373 (2020). https://doi.org/10.1038/s41591-020-0789-4
