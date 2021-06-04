@@ -1,4 +1,4 @@
-# Add HiRID v1.1 dataset to Postgres
+# Add HiRID v1.1.1 dataset to Postgres
 N.B. This is for the raw data rather than the merged or imputed.
 
 #### 1 Download database and SQL scripts
