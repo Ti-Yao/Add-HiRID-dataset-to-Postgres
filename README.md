@@ -39,6 +39,7 @@ CREATE SCHEMA hirid;
 cd /folder/containing/data/and/scripts
 psql -U postgres -h 127.0.0.1 -f create_tables.sql 'dbname=hirid options=--search_path=hirid password = myPassword'      # create tables 
 psql -U postgres -h 127.0.0.1  -f load_data.sql 'dbname=hirid options=--search_path=hirid password = myPassword'         # load hirid data into tables. This may take a while
+psql -U postgres -h 127.0.0.1  -f postgres_check.sql 'dbname=hirid options=--search_path=hirid password = myPassword'    # checks if the data has been loaded corrected
 ```
 
 
