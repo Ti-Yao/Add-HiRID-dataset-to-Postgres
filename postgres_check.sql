@@ -23,3 +23,4 @@ from expected exp
 inner join observed obs
 	on exp.tbl=obs.tbl
 	order by exp.tbl;
+
