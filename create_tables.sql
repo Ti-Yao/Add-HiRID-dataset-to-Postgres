@@ -17,6 +17,7 @@ CREATE TABLE PATIENTS
 	admissiontime TIMESTAMP NOT NULL,
 	sex CHARACTER(1) NOT NULL,
 	age INTEGER NOT NULL,
+	discharge_status VARCHAR(10),
 	CONSTRAINT patient_pkey PRIMARY KEY(patientid)
 ) ;
 
