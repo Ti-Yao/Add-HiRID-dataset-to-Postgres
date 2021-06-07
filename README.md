@@ -5,8 +5,8 @@ N.B. This is for the raw data rather than the merged or imputed.
 1. Get permission to use HiRID dataset from here. https://physionet.org/content/hirid/1.1.1
 2. Download the raw data files.
 ```
-wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/observation_tables_csv.tar.gz
-wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1/raw_stage/pharma_records_csv.tar.gz
+wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1.1/raw_stage/observation_tables_csv.tar.gz
+wget -r -N -c -np --user physionet user --ask-password https://physionet.org/files/hirid/1.1.1/raw_stage/pharma_records_csv.tar.gz
 ```
 3. Unzip the .tar.gz files using e.g. tarball (Linux/Mac OS) or 7zip (windows)
 4. Download the scripts from this repository.
