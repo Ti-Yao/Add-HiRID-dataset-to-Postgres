@@ -45,3 +45,4 @@ psql -U postgres -h 127.0.0.1  -f postgres_check.sql 'dbname=hirid options=--sea
 
 #### References
 1. Hyland, S.L., Faltys, M., Hüser, M. et al. Early prediction of circulatory failure in the intensive care unit using machine learning. Nat Med 26, 364–373 (2020). https://doi.org/10.1038/s41591-020-0789-4
+2. CircEWS Github repository https://github.com/ratschlab/circEWS
